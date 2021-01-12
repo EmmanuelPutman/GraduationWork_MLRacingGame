@@ -87,14 +87,14 @@ namespace KartGame.KartSystems
 
         public ArcadeKart.Stats baseStats = new ArcadeKart.Stats
         {
-            TopSpeed            = 10f,
-            Acceleration        = 5f,
-            AccelerationCurve   = 4f,
+            TopSpeed            = 30f,
+            Acceleration        = 3f,
+            AccelerationCurve   = 0.6f,
             Braking             = 10f,
             ReverseAcceleration = 5f,
             ReverseSpeed        = 5f,
             Steer               = 5f,
-            CoastingDrag        = 4f,
+            CoastingDrag        = 15f,
             Grip                = .95f,
             AddedGravity        = 1f,
             Suspension          = .2f
