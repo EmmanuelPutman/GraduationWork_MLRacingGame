@@ -398,7 +398,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -408,7 +408,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -419,6 +419,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2370,7 +2375,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2385,7 +2390,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3191,7 +3196,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3206,7 +3211,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3217,6 +3222,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3865,7 +3875,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3880,17 +3890,22 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: _startPosition
       value: 
-      objectReference: {fileID: 8163166610912434373}
+      objectReference: {fileID: 663704753}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -4877,7 +4892,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -4887,7 +4902,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -4898,6 +4913,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -5366,7 +5386,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -5381,7 +5401,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -5392,6 +5412,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -6844,6 +6869,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 244402944}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &663704753 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4430314889280900952, guid: 5cdf1b2b8a98d6e40a85d1cde3907099,
+    type: 3}
+  m_PrefabInstance: {fileID: 1150350547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &664799114
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7617,7 +7648,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -7632,17 +7663,22 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: _startPosition
       value: 
-      objectReference: {fileID: 8163166610912434373}
+      objectReference: {fileID: 663704753}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -8259,12 +8295,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bce91ab2f42c924e9171c2efed10487, type: 3}
---- !u!4 &754619351 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3934862071804020739, guid: 5bce91ab2f42c924e9171c2efed10487,
-    type: 3}
-  m_PrefabInstance: {fileID: 754619350}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &779150868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9011,7 +9041,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -9021,7 +9051,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -9032,6 +9062,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -9464,7 +9499,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -9474,7 +9509,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -9485,6 +9520,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -10775,7 +10815,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -10790,17 +10830,22 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: _startPosition
       value: 
-      objectReference: {fileID: 8163166610912434373}
+      objectReference: {fileID: 663704753}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -11079,6 +11124,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a54955f164002d42b1092df8c7b1c49, type: 3}
+--- !u!4 &1147243032 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
+    type: 3}
+  m_PrefabInstance: {fileID: 333498404}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1150350547
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11332,7 +11383,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -11342,7 +11393,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -11353,6 +11404,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -12120,8 +12176,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207105314}
-  m_LocalRotation: {x: -0.017039178, y: -0.00000008863002, z: 0.0000051718125, w: -0.99985486}
-  m_LocalPosition: {x: 63.6, y: 5.0299997, z: -51.17244}
+  m_LocalRotation: {x: -0.017039185, y: -0.00000008706089, z: 0.0000051717857, w: -0.99985486}
+  m_LocalPosition: {x: 63.6, y: 4.76, z: -51.17244}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -12254,7 +12310,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -12264,7 +12320,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -12275,6 +12331,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -13000,7 +13061,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -13015,7 +13076,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -13026,6 +13087,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -13823,7 +13889,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -13838,7 +13904,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -13849,6 +13915,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -14493,7 +14564,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -14508,7 +14579,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -14519,6 +14590,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -14869,8 +14945,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 754619351}
-  m_Follow: {fileID: 754619351}
+  m_LookAt: {fileID: 1147243032}
+  m_Follow: {fileID: 1147243032}
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 10
@@ -14893,8 +14969,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389235981}
-  m_LocalRotation: {x: -0.017039178, y: -0.00000008863002, z: 0.0000051718125, w: -0.99985486}
-  m_LocalPosition: {x: 63.6, y: 5.0299997, z: -51.17244}
+  m_LocalRotation: {x: -0.017039185, y: -0.00000008706089, z: 0.0000051717857, w: -0.99985486}
+  m_LocalPosition: {x: 63.6, y: 4.76, z: -51.17244}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1704309284}
@@ -15379,7 +15455,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -15394,17 +15470,22 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: _startPosition
       value: 
-      objectReference: {fileID: 8163166610912434373}
+      objectReference: {fileID: 663704753}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16031,7 +16112,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16041,7 +16122,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16052,6 +16133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16117,6 +16203,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: KartClassic_MLAgent (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8413615441882719434, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8413615441882719440, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16201,7 +16292,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16216,7 +16307,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16227,6 +16318,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16942,7 +17038,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16957,17 +17053,22 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: _startPosition
       value: 
-      objectReference: {fileID: 8163166610912434373}
+      objectReference: {fileID: 663704753}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -17673,7 +17774,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -17688,7 +17789,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -17699,6 +17800,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -18240,7 +18346,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -18255,17 +18361,22 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: _startPosition
       value: 
-      objectReference: {fileID: 8163166610912434373}
+      objectReference: {fileID: 663704753}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -19769,7 +19880,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -19784,17 +19895,22 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: _startPosition
       value: 
-      objectReference: {fileID: 8163166610912434373}
+      objectReference: {fileID: 663704753}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -20208,7 +20324,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -20223,17 +20339,22 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: _startPosition
       value: 
-      objectReference: {fileID: 8163166610912434373}
+      objectReference: {fileID: 663704753}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21445,7 +21566,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21455,7 +21576,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21466,6 +21587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21714,7 +21840,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21724,7 +21850,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21735,6 +21861,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21984,7 +22115,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 12
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21999,7 +22130,7 @@ PrefabInstance:
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: ShowRaycasts
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -22010,6 +22141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Colliders.Array.size
       value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _resetIdleTimerAfter
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -24241,6 +24377,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7821338021683448813, guid: 051f153389fd1ca45baa0aacf97f641e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7988222615775317364, guid: 051f153389fd1ca45baa0aacf97f641e,
         type: 3}

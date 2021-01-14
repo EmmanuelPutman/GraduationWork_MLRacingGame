@@ -77,6 +77,10 @@ namespace KartGame.AI
         public float SpeedReward;
         [Tooltip("When the track is completed faster than the previous round, we want to give a reward.")]
         public float _fasterTrackReward = 0.5f;
+        [Tooltip("Punishment when the agent is not moving at all.")]
+        public float _idlePunishment = -0.5f;
+        [Tooltip("When distance to next point is smaller than last check, give reward.")]
+        public float _movedTowardsPointReward = 0.001f;
         #endregion
 
         #region ResetParams
@@ -104,6 +108,19 @@ namespace KartGame.AI
         float steering;
         float[] localActions;
         int checkpointIndex;
+
+        /* Agent reward model_05 */
+        float _wallHitTimer = 0.0f;
+        bool _wallHit = false;
+        int _indexHitSensor = 0;
+        public float _resetTimeAfterHit = 3.0f;
+
+        float _idleTimer = 0.0f;
+        bool _isIdle = false;
+        public float _resetIdleTimerAfter = 5.0f;
+        Vector3 _lastPosition = Vector3.zero;
+        float _newPositionTimer = 0.0f;
+        float _newPositionAfter = 1.5f;
 
         /* Agent reward model_04 */
         float _timer = 0.0f;
@@ -135,8 +152,20 @@ namespace KartGame.AI
 
         void LateUpdate()
         {
+            /* Reward model_05 
             if (_roundStarted)
                 _timer += Time.deltaTime;
+             */
+
+            /* Reward model_06 */
+            if (_wallHit)
+                _wallHitTimer += Time.deltaTime;
+
+            /* Reward model_07 */
+            if (_isIdle)
+                _idleTimer += Time.deltaTime;
+
+            _newPositionTimer += Time.deltaTime;
 
             switch (Mode)
             {
@@ -174,7 +203,7 @@ namespace KartGame.AI
                 checkpointIndex = index;
             }
 
-            /* Rewarding model 4, if agent hits the start: timer should run, if agents hits the start again then the round is over and the time is saved. */
+            /* Rewarding model 4/5, if agent hits the start: timer should run, if agents hits the start again then the round is over and the time is saved. 
             if (other.gameObject.layer == 15)
             {
                 if (_timer > 1.0f)
@@ -192,6 +221,7 @@ namespace KartGame.AI
                     _roundStarted = true;
                 }
             }
+             */
         }
 
         void FindCheckpointIndex(Collider checkPoint, out int index)
@@ -229,9 +259,11 @@ namespace KartGame.AI
         public override void CollectObservations()
         {
             //AddVectorObs(kart.LocalSpeed());
-            /* Model_04: extra observations */
-            AddVectorObs(_previousRoundTime); // float = 1
-            AddVectorObs(_timer); //float = 1
+
+            /* Model_05: extra observations 
+              AddVectorObs(_previousRoundTime); // float = 1
+              AddVectorObs(_timer); //float = 1
+             */
 
             // Add an observation for direction of the agent to the next checkpoint.
             var next = (checkpointIndex + 1) % Colliders.Length;
@@ -261,12 +293,46 @@ namespace KartGame.AI
                 var hitDistance = (hit ? hitInfo.distance : RaycastDistance) / RaycastDistance;
                 AddVectorObs(hitDistance);
 
+                /* Model_06 */
                 if (hitDistance < current.HitThreshold)
                 {
-                    AddReward(HitPenalty);
-                    Done();
-                    AgentReset();
+                    /* Model_06 uses timer to look how long the wall was hit. */
+                    if (_wallHit == false)
+                    {
+                        _indexHitSensor = i;
+                        _wallHit = true;
+                    }
+
+
+                    //Only reset the agent after hitting the wall for _resetTimeAfterHit in seconds
+                    if (_wallHitTimer > _resetTimeAfterHit)
+                    {
+                        //Normal reward
+                        AddReward(HitPenalty);
+                        //Normal reward
+                        Done();
+                        //Normal reward
+                        AgentReset();
+                    }
                 }
+                else if (_indexHitSensor == i && _wallHitTimer > 0.1f) // Model_06
+                {
+                    _wallHit = false;
+                    _wallHitTimer = 0.0f;
+                }
+            }
+            /* Model_06 */
+            AddVectorObs(_wallHit); //bool = 1
+            AddVectorObs(_wallHitTimer); //float = 1
+
+            /* Model_07 */
+            AddVectorObs(_isIdle); //bool = 1
+            AddVectorObs(_idleTimer); //float = 1
+            AddVectorObs(_lastPosition); //Vector3 = 3
+            AddVectorObs((nextCollider.transform.position - transform.position).sqrMagnitude); //float = 1
+            if((nextCollider.transform.position - transform.position).sqrMagnitude < (nextCollider.transform.position - _lastPosition).sqrMagnitude) //When distance is closer than last distance to checkpoint
+            {
+                AddReward(_movedTowardsPointReward);
             }
         }
 
@@ -287,6 +353,31 @@ namespace KartGame.AI
 
             // Add rewards if the agent is heading in the right direction
             AddReward(reward * TowardsCheckpointReward);
+
+            /* Model_07 punish when standing idle */
+            if (_newPositionTimer > _newPositionAfter)
+            {
+                _newPositionTimer = 0.0f;
+                _lastPosition = transform.position;
+            }
+
+            if(transform.position.x < _lastPosition.x + 1.0f && transform.position.x > _lastPosition.x - 1.0f
+                && transform.position.z < _lastPosition.z + 1.0f && transform.position.z > _lastPosition.z - 1.0f)
+            {
+                _isIdle = true;
+            }
+            else
+            {
+                _isIdle = false;
+                _idleTimer = 0.0f;
+            }
+
+            if(_idleTimer > _resetIdleTimerAfter)
+            {
+                AddReward(_idlePunishment);
+                Done();
+                AgentReset();
+            }
             //AddReward(kart.LocalSpeed() * SpeedReward);
         }
 
@@ -295,21 +386,34 @@ namespace KartGame.AI
             switch (Mode)
             {
                 case AgentMode.Training:
-                    /*
-                    Collider collider       = Colliders[checkpointIndex];
+                    /* Random checkpoint selection */
+                    checkpointIndex = checkpointIndex = Random.Range(0, Colliders.Length - 1);
+                    Collider collider = Colliders[checkpointIndex];
                     transform.localRotation = collider.transform.rotation;
-                    transform.position      = collider.transform.position;
-                    */
-                    transform.position = _startPosition.position; /* Starting at model_04: new way of training */
+                    transform.position = collider.transform.position;
+                    /* Starting at model_05: new way of training 
+                    transform.position = _startPosition.position; 
                     transform.localRotation = Quaternion.identity;
-                    checkpointIndex = (Colliders.Length - 1); /* Set the start index to the index behind the starting position, which is the last checkpoint out of all checkpoints!! */
+                    checkpointIndex = (Colliders.Length - 1); // Set the start index to the index behind the starting position, which is the last checkpoint out of all checkpoints!! 
+                     */
                     kart.Rigidbody.velocity = default;
                     acceleration = 0f;
                     steering = 0f;
-                    /* Rewarding model_04 */
+                    /* Rewarding model_05
                     _roundStarted = false;
-                    _timer = 0.0f; 
-                    break; 
+                    _timer = 0.0f;
+                     */
+
+                    /* Rewarding model_06*/
+                    _wallHit = false;
+                    _wallHitTimer = 0.0f;
+
+                    /* Rewarding model_07*/
+                    _isIdle = false;
+                    _idleTimer = 0.0f;
+                    _newPositionTimer = 0.0f;
+                    _lastPosition = transform.position;
+                    break;
                 default:
                     break;
             }
