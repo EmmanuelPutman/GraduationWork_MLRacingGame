@@ -15,7 +15,7 @@ default:
     num_layers: 2
     time_horizon: 64
     sequence_length: 64
-    summary_freq: 1000
+    summary_freq: 5000
     use_recurrent: false
     vis_encode_type: simple
     reward_signals:
@@ -27,7 +27,7 @@ default:
 ArcadeDriver:
     batch_size: 512
     hidden_units: 256
-    learning_rate: 1.0e-5
+    learning_rate: 2.0e-5
 
 4x4Driver:
     beta: 5.0e-4

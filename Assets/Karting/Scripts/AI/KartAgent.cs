@@ -1,6 +1,7 @@
 ﻿using MLAgents;
 using KartGame.KartSystems;
 using UnityEngine;
+using System.Collections.Generic;
 
 namespace KartGame.AI
 {
@@ -76,11 +77,9 @@ namespace KartGame.AI
         [Tooltip("Typically if the agent moves faster, we want to reward it for finishing the track quickly.")]
         public float SpeedReward;
         [Tooltip("When the track is completed faster than the previous round, we want to give a reward.")]
-        public float _fasterTrackReward = 0.5f;
-        [Tooltip("Punishment when the agent is not moving at all.")]
-        public float _idlePunishment = -0.5f;
-        [Tooltip("When distance to next point is smaller than last check, give reward.")]
-        public float _movedTowardsPointReward = 0.001f;
+        public float _fasterTrackReward = 0.5f; //model_05 & _09
+        [Tooltip("When the agent has increased his speed from 1 point to the next, he should get a reward. (current vs. last round)")]
+        public float _pointToPointReward = 0.2f; //model_08 & _09
         #endregion
 
         #region ResetParams
@@ -92,7 +91,7 @@ namespace KartGame.AI
         [Tooltip("How far should the ray be when casted? For larger karts - this value should be larger too.")]
         public float GroundCastDistance;
 
-        /* Starting at model_04: no more random position selection for training */
+        /* Model_05 & _08 & _09: no more random position selection for training */
         [Tooltip("The position where agents start when they reset.")]
         public Transform _startPosition;
         #endregion
@@ -109,20 +108,20 @@ namespace KartGame.AI
         float[] localActions;
         int checkpointIndex;
 
-        /* Agent reward model_05 */
+        /* model_08 & _09*/
+        List<float> _timeToPoint = new List<float>();
+        float _pointToPointTimer = 0.0f;
+
+        /* MODEL_07 : everything back to normal, only rewarding when moving towards and reaching checkpoints */
+
+        /* Agent reward model_06 
         float _wallHitTimer = 0.0f;
         bool _wallHit = false;
         int _indexHitSensor = 0;
         public float _resetTimeAfterHit = 3.0f;
+         */
 
-        float _idleTimer = 0.0f;
-        bool _isIdle = false;
-        public float _resetIdleTimerAfter = 5.0f;
-        Vector3 _lastPosition = Vector3.zero;
-        float _newPositionTimer = 0.0f;
-        float _newPositionAfter = 1.5f;
-
-        /* Agent reward model_04 */
+        /* Agent reward model_05 & _09 */
         float _timer = 0.0f;
         float _previousRoundTime = 0.0f;
         bool _roundStarted = false;
@@ -139,9 +138,11 @@ namespace KartGame.AI
         void Start()
         {
             localActions = new float[LocalActionSize];
+            for(int i = 0; i < Colliders.Length; ++i)
+                _timeToPoint.Add(1000.0f);
 
             // If the agent is training, then at the start of the simulation, pick a random checkpoint to train the agent. 
-            /* UPDATE: no more random selection of points, starting at model_04*/
+            /* UPDATE: no more random selection of points, at model_05 & _08 & _09 */
             AgentReset();
 
             if (Mode == AgentMode.Inferencing)
@@ -152,20 +153,18 @@ namespace KartGame.AI
 
         void LateUpdate()
         {
-            /* Reward model_05 
+            /* Reward model_05 & _09
+             */
             if (_roundStarted)
                 _timer += Time.deltaTime;
-             */
 
-            /* Reward model_06 */
+            /* Reward model_06 
             if (_wallHit)
                 _wallHitTimer += Time.deltaTime;
+             */
 
-            /* Reward model_07 */
-            if (_isIdle)
-                _idleTimer += Time.deltaTime;
-
-            _newPositionTimer += Time.deltaTime;
+            /* Reward model_08 & _09*/
+            _pointToPointTimer += Time.deltaTime;
 
             switch (Mode)
             {
@@ -201,9 +200,17 @@ namespace KartGame.AI
             {
                 AddReward(PassCheckpointReward);
                 checkpointIndex = index;
+
+                /* model_08 & _09: compare fastest time completed at this index, if faster then give reward and store time - PointToPointSpeed */
+                if (_pointToPointTimer < _timeToPoint[checkpointIndex])
+                { 
+                    AddReward(_pointToPointReward);
+                    _timeToPoint[checkpointIndex] = _pointToPointTimer;
+                }
+                _pointToPointTimer = 0.0f;
             }
 
-            /* Rewarding model 4/5, if agent hits the start: timer should run, if agents hits the start again then the round is over and the time is saved. 
+            /* Rewarding model_05 & _09, if agent hits the start: timer should run, if agents hits the start again then the round is over and the time is saved. - FasterTrackSpeed */
             if (other.gameObject.layer == 15)
             {
                 if (_timer > 1.0f)
@@ -221,7 +228,6 @@ namespace KartGame.AI
                     _roundStarted = true;
                 }
             }
-             */
         }
 
         void FindCheckpointIndex(Collider checkPoint, out int index)
@@ -258,18 +264,17 @@ namespace KartGame.AI
 
         public override void CollectObservations()
         {
-            //AddVectorObs(kart.LocalSpeed());
 
-            /* Model_05: extra observations 
+            /* Model_05 & _09: extra observations */
               AddVectorObs(_previousRoundTime); // float = 1
               AddVectorObs(_timer); //float = 1
-             */
 
             // Add an observation for direction of the agent to the next checkpoint.
             var next = (checkpointIndex + 1) % Colliders.Length;
             var nextCollider = Colliders[next];
             var direction = (nextCollider.transform.position - kart.transform.position).normalized;
             AddVectorObs(Vector3.Dot(kart.Rigidbody.velocity.normalized, direction));
+            //AddVectorObs(kart.LocalSpeed());
 
             if (ShowRaycasts)
             {
@@ -293,18 +298,26 @@ namespace KartGame.AI
                 var hitDistance = (hit ? hitInfo.distance : RaycastDistance) / RaycastDistance;
                 AddVectorObs(hitDistance);
 
-                /* Model_06 */
+                /* Model_06 when wall is hit, small punishment, when agent is stuck to the wall or stays too long against the wall the agent resets */
                 if (hitDistance < current.HitThreshold)
                 {
-                    /* Model_06 uses timer to look how long the wall was hit. */
+                    //Normal reward
+                    AddReward(HitPenalty);
+                    //Normal reward
+                    Done();
+                    //Normal reward
+                    AgentReset();
+
+                    /* Model_06 uses timer to look how long the wall was hit. 
                     if (_wallHit == false)
                     {
                         _indexHitSensor = i;
                         _wallHit = true;
                     }
-
+                     */
 
                     //Only reset the agent after hitting the wall for _resetTimeAfterHit in seconds
+                    /*
                     if (_wallHitTimer > _resetTimeAfterHit)
                     {
                         //Normal reward
@@ -314,26 +327,19 @@ namespace KartGame.AI
                         //Normal reward
                         AgentReset();
                     }
+                    */
                 }
-                else if (_indexHitSensor == i && _wallHitTimer > 0.1f) // Model_06
-                {
-                    _wallHit = false;
-                    _wallHitTimer = 0.0f;
-                }
+                //else if (_indexHitSensor == i && _wallHitTimer > 0.1f) // Model_06
+                //{
+                //    _wallHit = false;
+                    //_wallHitTimer = 0.0f;
+               // }
             }
-            /* Model_06 */
-            AddVectorObs(_wallHit); //bool = 1
-            AddVectorObs(_wallHitTimer); //float = 1
+            /* Model_06 
+            //AddVectorObs(_wallHit); //bool = 1
+            //AddVectorObs(_wallHitTimer); //float = 1
+             */
 
-            /* Model_07 */
-            AddVectorObs(_isIdle); //bool = 1
-            AddVectorObs(_idleTimer); //float = 1
-            AddVectorObs(_lastPosition); //Vector3 = 3
-            AddVectorObs((nextCollider.transform.position - transform.position).sqrMagnitude); //float = 1
-            if((nextCollider.transform.position - transform.position).sqrMagnitude < (nextCollider.transform.position - _lastPosition).sqrMagnitude) //When distance is closer than last distance to checkpoint
-            {
-                AddReward(_movedTowardsPointReward);
-            }
         }
 
         public override void AgentAction(float[] vectorAction)
@@ -353,32 +359,8 @@ namespace KartGame.AI
 
             // Add rewards if the agent is heading in the right direction
             AddReward(reward * TowardsCheckpointReward);
-
-            /* Model_07 punish when standing idle */
-            if (_newPositionTimer > _newPositionAfter)
-            {
-                _newPositionTimer = 0.0f;
-                _lastPosition = transform.position;
-            }
-
-            if(transform.position.x < _lastPosition.x + 1.0f && transform.position.x > _lastPosition.x - 1.0f
-                && transform.position.z < _lastPosition.z + 1.0f && transform.position.z > _lastPosition.z - 1.0f)
-            {
-                _isIdle = true;
-            }
-            else
-            {
-                _isIdle = false;
-                _idleTimer = 0.0f;
-            }
-
-            if(_idleTimer > _resetIdleTimerAfter)
-            {
-                AddReward(_idlePunishment);
-                Done();
-                AgentReset();
-            }
             //AddReward(kart.LocalSpeed() * SpeedReward);
+
         }
 
         public override void AgentReset()
@@ -386,33 +368,30 @@ namespace KartGame.AI
             switch (Mode)
             {
                 case AgentMode.Training:
-                    /* Random checkpoint selection */
-                    checkpointIndex = checkpointIndex = Random.Range(0, Colliders.Length - 1);
+                    /* Random checkpoint selection model_07
+                    checkpointIndex = Random.Range(0, Colliders.Length - 1);
                     Collider collider = Colliders[checkpointIndex];
                     transform.localRotation = collider.transform.rotation;
                     transform.position = collider.transform.position;
-                    /* Starting at model_05: new way of training 
+                     */
+                    /* Starting at model_05 & _08 & _09: new way of training */
                     transform.position = _startPosition.position; 
                     transform.localRotation = Quaternion.identity;
                     checkpointIndex = (Colliders.Length - 1); // Set the start index to the index behind the starting position, which is the last checkpoint out of all checkpoints!! 
-                     */
                     kart.Rigidbody.velocity = default;
                     acceleration = 0f;
                     steering = 0f;
-                    /* Rewarding model_05
+
+                    /* Rewarding model_05 & _09*/
                     _roundStarted = false;
                     _timer = 0.0f;
-                     */
 
-                    /* Rewarding model_06*/
+                    /* Rewarding model_06
                     _wallHit = false;
                     _wallHitTimer = 0.0f;
-
-                    /* Rewarding model_07*/
-                    _isIdle = false;
-                    _idleTimer = 0.0f;
-                    _newPositionTimer = 0.0f;
-                    _lastPosition = transform.position;
+                     */
+                    /* Rewarding model_08 & _09*/
+                    _pointToPointTimer = 0.0f;
                     break;
                 default:
                     break;

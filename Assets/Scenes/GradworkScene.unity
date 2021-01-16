@@ -398,12 +398,22 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -415,6 +425,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 8163166610912434373}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -475,6 +490,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 842272265}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -2375,7 +2395,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -2389,6 +2409,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -2397,6 +2427,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 3091374989544559131}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -2452,6 +2487,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 990032751}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -3196,7 +3236,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3210,6 +3250,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -3218,6 +3268,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 3091374989544559131}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -3278,6 +3333,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 990032751}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -3875,7 +3935,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -3889,6 +3949,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -3897,6 +3967,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 663704753}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -3957,6 +4032,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 4406137}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -4892,12 +4972,22 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -4909,6 +4999,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 8163166610912434373}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -4969,6 +5064,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 842272265}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -5386,7 +5486,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -5400,6 +5500,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -5408,6 +5518,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 3091374989544559131}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -5468,6 +5583,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 990032751}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -7648,7 +7768,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -7662,6 +7782,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -7670,6 +7800,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 663704753}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -7730,6 +7865,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 4406137}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -9041,12 +9181,22 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -9058,6 +9208,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 8163166610912434373}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -9118,6 +9273,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 842272265}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -9499,12 +9659,22 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -9516,6 +9686,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 8163166610912434373}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -9576,6 +9751,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 842272265}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -10815,7 +10995,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -10829,6 +11009,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -10837,6 +11027,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 663704753}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -10897,6 +11092,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 4406137}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -11383,12 +11583,22 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -11400,6 +11610,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 8163166610912434373}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -11460,6 +11675,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 842272265}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -12176,7 +12396,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207105314}
-  m_LocalRotation: {x: -0.017039185, y: -0.00000008706089, z: 0.0000051717857, w: -0.99985486}
+  m_LocalRotation: {x: -0.017039185, y: -0.0000000870609, z: 0.0000051717857, w: -0.99985486}
   m_LocalPosition: {x: 63.6, y: 4.76, z: -51.17244}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -12310,12 +12530,22 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -12327,6 +12557,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 8163166610912434373}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -12387,6 +12622,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 842272265}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -13061,7 +13301,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -13075,6 +13315,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -13083,6 +13333,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 3091374989544559131}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -13143,6 +13398,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 990032751}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -13889,7 +14149,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -13903,6 +14163,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -13911,6 +14181,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 3091374989544559131}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -13971,6 +14246,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 990032751}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -14564,7 +14844,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -14578,6 +14858,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -14586,6 +14876,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 3091374989544559131}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -14646,6 +14941,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 990032751}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -14969,7 +15269,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389235981}
-  m_LocalRotation: {x: -0.017039185, y: -0.00000008706089, z: 0.0000051717857, w: -0.99985486}
+  m_LocalRotation: {x: -0.017039185, y: -0.0000000870609, z: 0.0000051717857, w: -0.99985486}
   m_LocalPosition: {x: 63.6, y: 4.76, z: -51.17244}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15455,7 +15755,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -15469,6 +15769,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -15477,6 +15787,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 663704753}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -15537,6 +15852,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 4406137}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -16112,12 +16432,22 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16129,6 +16459,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 8163166610912434373}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -16189,6 +16524,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 842272265}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -16292,7 +16632,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -16306,6 +16646,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -16314,6 +16664,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 3091374989544559131}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -16374,6 +16729,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 990032751}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -17038,7 +17398,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -17052,6 +17412,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -17060,6 +17430,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 663704753}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -17120,6 +17495,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 4406137}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -17774,7 +18154,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -17788,6 +18168,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -17796,6 +18186,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 3091374989544559131}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -17856,6 +18251,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 990032751}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -18346,7 +18746,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -18360,6 +18760,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -18368,6 +18778,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 663704753}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -18428,6 +18843,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 4406137}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -19880,7 +20300,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -19894,6 +20314,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -19902,6 +20332,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 663704753}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -19962,6 +20397,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 4406137}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -20324,7 +20764,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -20338,6 +20778,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -20346,6 +20796,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 663704753}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -20406,6 +20861,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 4406137}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -21268,6 +21728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CountryTrack_Training
       objectReference: {fileID: 0}
+    - target: {fileID: 8781834914653147000, guid: ca9b8cb628757af4fbb9f00728cb1711,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8781834914653147001, guid: ca9b8cb628757af4fbb9f00728cb1711,
         type: 3}
       propertyPath: m_RootOrder
@@ -21566,12 +22031,22 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21583,6 +22058,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 8163166610912434373}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -21643,6 +22123,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 842272265}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -21840,12 +22325,22 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Mode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -21857,6 +22352,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 8163166610912434373}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -21917,6 +22417,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 842272265}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -22115,7 +22620,7 @@ PrefabInstance:
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: m_BrainParameters.vectorObservationSize
-      value: 17
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1366790329578736530, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
@@ -22129,6 +22634,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
+      propertyPath: HitPenalty
+      value: -1.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: SpeedReward
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
       propertyPath: ShowRaycasts
       value: 1
       objectReference: {fileID: 0}
@@ -22137,6 +22652,11 @@ PrefabInstance:
       propertyPath: _startPosition
       value: 
       objectReference: {fileID: 3091374989544559131}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: _idlePunishment
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.size
@@ -22197,6 +22717,11 @@ PrefabInstance:
       propertyPath: Colliders.Array.data[9]
       value: 
       objectReference: {fileID: 990032751}
+    - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
+        type: 3}
+      propertyPath: TowardsCheckpointReward
+      value: 0.03
+      objectReference: {fileID: 0}
     - target: {fileID: 6725854088147769874, guid: 4a54955f164002d42b1092df8c7b1c49,
         type: 3}
       propertyPath: Colliders.Array.data[10]
@@ -24393,6 +24918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Track_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163166611701406597, guid: 051f153389fd1ca45baa0aacf97f641e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8163166611701406598, guid: 051f153389fd1ca45baa0aacf97f641e,
         type: 3}
